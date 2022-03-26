@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+
+
+
+
+<script>
+
+   
+
+    window.onload = start;
+    
+     let quotes = [
+               {
+               quote: `I've been a developer for nearly 20 years and the are 2 levels of confidence for me. I'm confident about the things I know, but I'm also confident there's way more I don't know.
+
+After all these years I've gone from not knowing something to knowing it so many times that I'm confident I can keep improving, keep expanding my skills`,
+               author: 'Radmobile'
+               },
+               {
+               quote: `I've been exactly where you are right now. I feel your pain. I am not a Rails developer, so I can't help you with the details of that technology. I'm a .NET guy.
+
+Years ago, I got so sick of not being able to answer the deep-dive technical questions, and I knew I had to do something different. I started taking detailed notes in every interview, writing down the questions they asked to which I didn't know the answers. More than once, I could tell that the person doing the interview stopped asking questions before they reached the end of their question list (because I was no longer able to answer them) so I asked him if he would be willing to provide me a complete list of all the questions he *would* ask if I was able to answer them all. He did so.
+
+Then, I would go home and work my brains out trying to grasp the concepts they were asking about that I didn't know. In every case, I would email back the hiring manager (even days or weeks later) to say, "I have studied all the things you asked me about that I didn't know how to answer in our interview. Now, I would be able to answer them. If you ever have another position come open, I hope you will reconsider me."
+
+One time, that actually paid off. And at that job, I learned a TON, and that's the job I credit for moving me from junior/mid-level to expert.
+
+Hope this helps.`,
+               author: 'CaseyCrookston'
+               },
+               {
+               quote: `Honestly, practice, practice, practice.
+
+You want to be the best, ask questions.
+
+How can I do this more efficiently? Can you explain it in more detail?
+
+Read, watch as many books, YouTube videos, demos you have time for.
+
+Promotions aren't just about being the best, it's the work ethic and enthusiasm to want to improve and work harder than your coworkers`,
+               author: 'MrBardoth'
+               },
+               {
+               quote: `I'm in a MOOD today so I'll tell my story.
+
+I graduated college with the lowest GPA possible in mathematics. Learned python, java, and mysql the last 3 months to make an app and get rich, since I was screwed otherwise. Showcased what I knew on my resume and got a job immediately as a entry level dev. Three years later, I was offered a senior position at a fortune 500. A year after that, lead at a prestigious news agency.
+
+Try your damndest to make something, and use that experience to dominate your resume and interviews. SHOW your determination. The one's who need to see will notice. The places you want to be, will see.`,
+               author: 'deadtrackstar'
+               },
+               {
+               quote: `By myself, the hardest part is to give yourself structure...But most courses do that for you. The typical 2019 frontend roadmap helps a lot, if you look at it knowing it'd take years to complete and take it slow...I dedicated a year before I thought I was ready for a junior role and what you discover at work is that you probably aren't, but at this point you know how to learn things fast and things are familiar...I am starting to feel like a developer now but it took a good 3 years.
+
+One of the most important things learning by yourself is to find what works for you. Books don't work for me, video courses and coding along and then creating my own projects do. Maybe your thing is a bootcamp, who knows. I started with Freecodecamp, codecademy, then books, then a ton of Udemy courses...`,
+               author: 'sergi_dev087'
+               },
+               {
+               quote: `When I interview candidates (I'm now a Senior Android Engineer) I always want to see a complete app published. It shows that the candidate is taking this very seriously and has the determination to follow through with an entire project. It doesn't have to be overly complex, but showing understandings of UI, Service Layers, and a web back end (firebase) helps. One guy was a paint store manager and made a paint coating calculator app. That shows problem solving as well.`,
+               author: 'thejoeba'
+               },
+               {
+               quote: `When I interview candidates (I'm now a Senior Android Engineer) I always want to see a complete app published. It shows that the candidate is taking this very seriously and has the determination to follow through with an entire project. It doesn't have to be overly complex, but showing understandings of UI, Service Layers, and a web back end (firebase) helps. One guy was a paint store manager and made a paint coating calculator app. That shows problem solving as well.`,
+               author: 'gvedem'
+               },
+               {
+               quote: `It is never too late. I know someone who changed careers at the age of 35; she went back to school and became a neurosurgeon. That is at least 10 years of work (7 residency and 4 med school).
+
+The educational and experience requirements aren't nearly as demanding for programming.
+
+You have your head in the right place. Stay confident and stay persistent. Don't let things discourage you. You will have to change your life depending on how aggressive you want to be in your approach.
+
+Most importantly, reach out and meet people. Networking is very important for many of the obvious reasons. Additional benefit is that you learn more and it is harder to be discouraged when fully immersed.`,
+               author: 'SpewPewPew'
+               },
+               {
+               quote: `Ignore the certifications. Get into making projects as soon as possible. That will work as your resume, while at the same time being a more efficient way to learn. Start applying for jobs early and often, include a link to your GitHub repo. Sooner or later you'll find someone to hire you. After that it's just a matter of staying humble and hungry. Keep learning, all the best!`,
+               author: 'phigr'
+               },
+               {
+               quote: `Step 1 - Pick one good introductory book about programming to study fully.
+
+Step 2 - Next a good book about Data Structures and Algorithms, same complete it fully.
+
+Step 3 - Build whatever you want and learn the rest along the way ...`,
+               author: 'Lesabotsy'
+               },
+               {
+               quote: `some wise programmer told me once-programming is all about practice. that is it.`,
+               author: 'anonymous'
+               },
+               {
+               quote: `My friend is 50 and has learnt how to code. He is brilliant at it.`,
+               author: 'anonymous'
+               },
+               {
+               quote: `Remember that you're not limited to working for other people. If you have a good idea, the beauty of learning programming is that you can turn it into a business with very little overhead. If you want to go big, you can always find some other folks in the same position and band together.`,
+               author: 'CodeBlue_04'
+               },
+               {
+               quote: `Some of the best software developers I’ve ever met switched to Software development mid career.
+
+It’s funny to see how different life experiences can round out the edges when it comes to a career in CS. As an example, I’ve worked with a guy who was a truck driver for 20 years before he moved to the states - he became one of the best DBAs I’ve ever met. I worked with a .NET Developer that was a history high school teacher for 10 years prior - he was an amazing mentor and could really explain things well. I’ve also worked with a Software Developer who was a mechanic in a past life. His attention to detail and how a software system worked as a whole and what it would affect given changing different parts was really showing of him previously being a mechanic.
+
+I find it’s important to do other things that just programming/CS if you have a career focus. Having different experiences will make you a more well-rounded Developer and person in general.`,
+               author:'anonymous'
+               },
+               {
+               quote: `Awesome stuff. I was in construction and went back to school at 35 and got a CS degree, graduated at 40 and been working as SW engineer for almost 5 years. We can teach old dogs new tricks.`,
+               author: 'Allaran'
+               },
+               {
+               quote: `I love how every oldschool GREAT developer (Torvalds, Guido, Ritchie etc) all started by digging into books and tinker the hell out of them, yet today there's not enough emphasis on TINKERING! You should be treating code examples as if you're doing lab work - because that's what you're doing, and Google for the extras. What we instead do is constantly search for "the perfect tutorial", "the right tutorial". Rome wasn't built in a day, why would the project you want to build should?
+
+People should take your time and get curious about it, instead of going through the motions of what the video says they should do.`,
+               author: 'CauseBecause_'
+               },
+               {
+               quote: `When I first started, I would perform code-alongs. I didn't learn shit.
+
+Now when I watch a video tutorial, I take notes lecture style. Then I recreate whatever was in the lesson from my notes.
+
+I convert it from video, to hand written, and then to code. My learning increased 1000%.`,
+               author: 'no_dice_grandma'
+               },
+               {
+               quote: `There's a name for this, it is when your taste in something is misaligned with your capability. Take art, you can imagine and conceptualize a great idea, but if you try to act on it it doesn't come out that way.
+
+It takes time and practice to get your skills up to par, the things that you stick with become the things you can do.`,
+               author: 'brickstick'
+               },
+               {
+               quote: `Yeah, you just do it. I know that sounds harsh, but there is no such thing as a random pill that gives you motivation. You just need to push through and dedicate yourself to it.`,
+               author: 'Salty_Dugtrio'
+               },
+               {
+               quote: `I’m a medical school dropout who just became a software engineer this past July! Feel free to message me to start up a chat. Long story short: I got into UCSD SOM 2018, hated it, dropped out, taught myself Python for a month, then JavaScript/HTML/CSS the second, learned Django (Python Web framework) and Jquery (JavaScript Library that makes you write less JavaScript Code) and Heroku (deployment service) my third, deployed my first web-app in month 4, learned some new modern technologies my 5th month (React and Django Rest Framework) and deployed another app, then by some miracle I got one interview at an SF startup and killed it—now I’m here.
+
+The whole process took me 6 months: from printing “Hello World” November 2018 to landing my first internship in May 2019, where I then transitioned to becoming a full time junior engineer.
+
+Though I do admit that luck probably had plenty to do with where I am, I’m sure with perseverance you can definitely do it.
+
+Also would like to note that on top of building things I kept my computer science fundamentals sharp by reading Data Structure and Algorithms textbooks and did tons of problems both from the book and on this website called Hackerrank, as I knew most interviews would have some problem-solving component.
+
+CS is a completely different ball game from everything you studied both as a pre-med and a med, so be prepared to feel extremely frustrated at times, but if I could do it so can you!`,
+               author: 'solidiquis1'
+               },
+               {
+               quote: `I'm proud of you man. At such a young age too! That's your true asset right there.
+
+I changed lanes at 30 (better late than never) where i decided i had enough designing websites for chump change and wanted to code them for a living. Studied Udemy exclusively and landed a gig as a frontend engineer after 12 months. Since it was a mid role and I nailed the interviews I skipped Junior and I'm killing it at the company 6 months in. I look forward to go to work now.
+
+Great education is available for such low costs for this domain.. it only takes will and motivation.`,
+               author: 'MisterMeta'
+               },
+               {
+               quote: `The best resource i’ve ever used is a site/app called Udemy. The courses when on “regular” price are high but kid you not they go on sale every few days for only $10.99. 40 HOURS of content on some courses for the cost of lunch. I own over 40. (Can deduct these as business expenses too if you have an LLC) With out a doubt credit my success to that. Video lessons, support community, great instructions, etc. College and student debt is the single largest scam that ever perpetuated our society. I then started building projects. SAVE EVERY PROJECT YOU COMPLETE. Use these as a portfolio when you interview, companies eat that shit up. Make a website, display you projects, maybe even do some light freelance work. Beef it up on your linkedin and they come to you. The last 3 jobs i’ve had came from me not even applying. It’s a developers market right now.`,
+               author: 'Accurate-Ad2902'
+               },
+               {
+               quote: `Yep. Word of advice, don’t try to learn how to code from 10 different websites at once. Pick one site and stick with it.
+
+If you start to get bored from learning then try to build something yourself. You will have hundreds of abandoned projects in the beginning. Who cares… we all do…. A good way to minimize that is to build something specific. If it’s web development than try focusing on the header or the footer or something…. If it’s mobile try a small interaction. If it’s gaming then try something like making a character walk.
+
+If you start to feel like you suck and this isn’t for you, go play video games, watch a movie, get drunk (if you’re over 21), smoke some weed, and relax. You still will suck the next day but at least you will give your brain a rest from all of that over thinking like we all do everyday.
+
+Join a community. Try to help out on GitHub.
+
+One year from the day you start you will be 10 times better.
+
+Just remember: practice more, tutorial hell less.`,
+               author: 'Unlikely_Pattern_377'
+               },
+               {
+               quote: `If you're not sure about your skills, you're junior. If you are confident you can develop and deploy an application with a backend securely all by yourself within a reasonable deadline, you're mid level. If you can develop an application using a micro-service architecture with third party API integrations, lead other developers and solve 95% of the bugs they cannot solve, you are senior.`,
+               author: 'Ay-Bee-Sea'
+               },
+               {
+               quote: `It's good to be unemployed when starting this journey. You'll need lots of time to learn programming well.
+
+Is definitely possible. And many people have done it. If you become proficient in many languages, not just python and SQL, you will be highly employable in a remote only position.
+
+The only way to learn a programming language well, is by building applications. You can watch all the videos in the world and read all the books and you will never be better than someone who has spent 1/10 of that time writing code. In python, make a simple game, then increasingly complex games/sites.
+
+Think of something you'd like to build, like tic tac toe, then try and build it in python.
+
+Obviously, you will need to read some tutorials to get started.
+
+[Guru Python Tutorials]
+
+Just run the first 5 lessons`,
+               author: 'thetreadmilldesk'
+               },
+    
+    
+    ];
+    
+    
+    function start() {
+        console.log('woo!');
+        mkquote();
+        }
+        
+        
+    function mkquote() {
+        let size=quotes.length;
+        let randomindex = Math.floor(Math.random() * size);
+        let randomdata = quotes[randomindex];
+        
+    
+        
+       
+        let tweeter = "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=%20"
+        tweeter+= "\'" + randomdata.quote + "%20" + randomdata.author
+      
+        document.getElementById('text').innerText = randomdata.quote
+        document.getElementById('author').innerText = " -- " + randomdata.author;
+        document.getElementById('tweet-quote').href = tweeter;
+        
+        
+    
+         }
+        
+</script>
+
+   <title>Software Developer Inspiration!</title>
+   
+   <style>
+   
+   body {
+       background-color: #C69B7B;
+      //padding: 50px 50px 50px 50px;
+       padding-top: 200px;
+       margin: auto;
+       text-align: center;
+       max-width: 800px;
+       min-width: 300px;
+   }
+   
+   .outer {
+        background-color: #826F66;
+        text-align: left;
+   }
+   
+   .inner {
+        background-color: #D8D2CB;
+   }
+    .container {
+        background-color: #826F66;
+        min-width: 90%;
+   }
+      a:hover {
+            color: #633974;
+            text-decoration: none;
+            }
+        a {
+            color: #301934;
+            text-decoration: none;
+            }
+                 
+        .ending {
+               /* background-color: #46244C; */
+                max-width: 500px;
+                margin: auto;
+                font-size: 50%;
+                }
+   
+   </style>
+   
+  </head>
+  <body>
+    <h1>Software Developer Inspiration!</h1>
+    <div class='outer rounded'>
+    <br>
+    <h5 align='center' class='font-weight-bold'>For every developer walking the long road to mastery</h5>
+    <br>
+    <div class='container rounded'>
+        
+        <div class='inner rounded'>
+        <wrapper id='quote-box'>
+            <div id='text' class='font-weight-bold'></div>
+           <br> <div id='author' align='right'></div>
+         </div><br>
+         <wrapper id='quote-box'>
+            <button id='new-quote' onClick = mkquote() class='btn btn-block btn-info'>New Quote</button>
+            <a href=tweeter target='_blank' id='tweet-quote' class='btn btn-block btn-warning'>Tweet Quote</a>
+         </wrapper>
+           <br><br>
+        </div>
+         </wrapper>
+    </div><br>
+    <div class='ending'>Thanks to all the awesome peeps in the various CS subs throughout Reddit for sharing knowledge and, most of all, hope.<br>
+   Like what you see? Then <a href='mailto:mikeobilade@gmail.com?subject=Hi there!'><b>get in touch!</b></a>
+  </b><br>
+  Check out <a href=https://codepen.io/MadeWithMike target='_blank'><b>MadeWithMike</b></a>.
+  </div>
+    
+    
+<script src=https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+ </body>
+</html>
